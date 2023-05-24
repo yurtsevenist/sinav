@@ -10,6 +10,10 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use App\Models\User;
+use App\Models\Lend;
+use App\Models\Book;
+use App\Http\Requests\RegisterPostRequest;
+use Illuminate\Support\Str;
 
 class Controller extends BaseController
 {
