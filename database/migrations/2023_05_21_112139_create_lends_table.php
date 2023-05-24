@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('uid')->comment("Kullanıcı id si");
             $table->integer('bid')->comment("kitap id si");
             $table->date('lenddate')->comment("ödünç alma tarihi");
-            $table->date('deliverydate')->comment("geri verme tarihi");
+            $table->date('deliverydate')->nullable()->comment("geri verme tarihi");
             $table->timestamps();
             $table->foreign('uid')
             ->references('id')
